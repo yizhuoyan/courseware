@@ -1,0 +1,33 @@
+1)创建一个javaweb的maven项目
+2)添加两个目录
+	src/main/java
+	src/test/java
+3)修改maven编译的jdk版本
+	<properties> 
+		<maven.compiler.source>1.8</maven.compiler.source> 		<maven.compiler.target>1.8</maven.compiler.target> 
+	</properties> 
+4)添加servlet-api依赖
+	<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>	
+		</dependency>
+5)添加jstl依赖
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+6)修改web.xml的约束(改成shecma 3.1)
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1">
+
+  
+</web-app>
+
